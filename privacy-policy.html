@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Política de Privacidad</title>
+  <style>
+    :root {
+      --bg: #f8f7f4;
+      --surface: #ffffff;
+      --accent: #1a6b3c;
+      --accent-light: #e8f5ee;
+      --text: #1a1a1a;
+      --muted: #5a5a5a;
+      --border: #e2e0db;
+      --radius: 10px;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    p, li {
+      hyphens: auto;
+      -webkit-hyphens: auto;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.75;
+    }
+
+    header {
+      background: var(--accent);
+      color: #fff;
+      padding: 48px 24px 40px;
+      text-align: center;
+    }
+
+    .badge {
+      display: inline-block;
+      background: rgba(255,255,255,0.18);
+      border: 1px solid rgba(255,255,255,0.3);
+      border-radius: 20px;
+      font-size: 12px;
+      letter-spacing: .07em;
+      text-transform: uppercase;
+      padding: 4px 14px;
+      margin-bottom: 16px;
+      color: #d4f0e0;
+    }
+
+    header h1 {
+      font-size: clamp(26px, 5vw, 38px);
+      font-weight: 700;
+      letter-spacing: -.5px;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 15px;
+      color: rgba(255,255,255,0.75);
+    }
+
+    .container {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 0 20px 60px;
+    }
+
+    .summary-bar {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 12px;
+      margin: 32px 0 40px;
+    }
+
+    .summary-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 16px 18px;
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+    }
+
+    .summary-card .icon {
+      font-size: 22px;
+      line-height: 1;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .summary-card .label {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--accent);
+      display: block;
+      margin-bottom: 2px;
+    }
+
+    .summary-card .desc {
+      font-size: 13px;
+      color: var(--muted);
+      line-height: 1.45;
+    }
+
+    section {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 28px 30px;
+      margin-bottom: 16px;
+    }
+
+    section h2 {
+      font-size: 17px;
+      font-weight: 700;
+      color: var(--accent);
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    section h2 .icon {
+      font-size: 18px;
+    }
+
+    section p, section li {
+      font-size: 15px;
+      color: var(--muted);
+      line-height: 1.7;
+      text-align: justify;
+      text-justify: inter-word;
+    }
+
+    section ul {
+      padding-left: 20px;
+      margin-top: 8px;
+    }
+
+    section li {
+      margin-bottom: 6px;
+    }
+
+    .highlight {
+      background: var(--accent-light);
+      border-left: 3px solid var(--accent);
+      border-radius: 0 6px 6px 0;
+      padding: 14px 18px;
+      margin-top: 14px;
+      font-size: 14px;
+      color: #1a4a2e;
+      font-weight: 500;
+      text-align: justify;
+      text-justify: inter-word;
+    }
+
+    .data-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 14px;
+      font-size: 14px;
+    }
+
+    .data-table th {
+      background: var(--accent-light);
+      color: var(--accent);
+      font-weight: 600;
+      text-align: left;
+      padding: 10px 14px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .data-table td {
+      padding: 10px 14px;
+      border-bottom: 1px solid var(--border);
+      color: var(--muted);
+      vertical-align: top;
+    }
+
+    .data-table tr:last-child td { border-bottom: none; }
+
+    footer {
+      text-align: center;
+      padding: 24px;
+      font-size: 13px;
+      color: var(--muted);
+      border-top: 1px solid var(--border);
+    }
+
+    @media (max-width: 520px) {
+      section { padding: 20px 18px; }
+      header { padding: 36px 20px 32px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="badge">Documento legal</div>
+  <h1>Política de Privacidad</h1>
+  <p style="font-size:18px;font-weight:600;color:#a8e6c0;margin-bottom:6px;">DermatoSport</p>
+  <p>Última actualización: <span id="fecha"></span></p>
+</header>
+
+<div class="container">
+
+  <div class="summary-bar">
+    <div class="summary-card">
+      <span class="icon">📴</span>
+      <div>
+        <span class="label">Sin internet</span>
+        <span class="desc">Funciona completamente sin conexión</span>
+      </div>
+    </div>
+    <div class="summary-card">
+      <span class="icon">🔒</span>
+      <div>
+        <span class="label">Sin servidores</span>
+        <span class="desc">No enviamos datos a ningún servidor externo</span>
+      </div>
+    </div>
+    <div class="summary-card">
+      <span class="icon">👤</span>
+      <div>
+        <span class="label">Sin cuentas</span>
+        <span class="desc">No requiere registro ni inicio de sesión</span>
+      </div>
+    </div>
+    <div class="summary-card">
+      <span class="icon">🚫</span>
+      <div>
+        <span class="label">Sin publicidad</span>
+        <span class="desc">No compartimos datos con anunciantes</span>
+      </div>
+    </div>
+  </div>
+
+  <section>
+    <h2><span class="icon">📋</span> 1. Información general</h2>
+    <p>Esta política de privacidad describe cómo <strong>DermatoSport</strong> trata la información ingresada por el usuario. Al utilizar esta aplicación, usted acepta las prácticas descritas en este documento.</p>
+    <p style="margin-top:10px">DermatoSport opera completamente de forma local en su dispositivo. No requiere conexión a internet, no crea cuentas de usuario y no transmite ningún dato a servidores externos.</p>
+  </section>
+
+  <section>
+    <h2><span class="icon">📊</span> 2. Datos que procesa la aplicación</h2>
+    <p>DermatoSport procesa los siguientes datos <strong>únicamente dentro del dispositivo</strong> para generar los resultados de las herramientas de análisis:</p>
+
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Dato</th>
+          <th>Herramienta que lo usa</th>
+          <th>Almacenamiento</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Nombre</td>
+          <td>Identificación del perfil analizado</td>
+          <td>Solo en el dispositivo</td>
+        </tr>
+        <tr>
+          <td>Fecha de nacimiento</td>
+          <td>Dermatoglifia, IMC y Frecuencia Cardiaca </td>
+          <td>Solo en el dispositivo</td>
+        </tr>
+        <tr>
+          <td>Peso y talla</td>
+          <td>Índice de Masa Corporal (IMC)</td>
+          <td>Solo en el dispositivo</td>
+        </tr>
+        <tr>
+          <td>Huellas dactilares</td>
+          <td>Dermatoglifia Deportiva</td>
+          <td>Solo en el dispositivo</td>
+        </tr>
+        <tr>
+          <td>Frecuencia cardíaca</td>
+          <td>FC Máx, reserva, recuperación y Zonas Karvonen</td>
+          <td>Solo en el dispositivo</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="highlight">
+      Ninguno de estos datos se transmite, comparte, vende ni sincroniza con servidores externos, terceros ni ningún otro dispositivo.
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="icon">🗄️</span> 3. Almacenamiento y eliminación de datos</h2>
+    <ul>
+      <li>Los datos ingresados se procesan en tiempo real directamente en su dispositivo.</li>
+      <li>La aplicación puede almacenar datos de forma local (en el almacenamiento interno del dispositivo) para mostrar resultados previos.</li>
+      <li>Usted puede eliminar todos los datos locales en cualquier momento desinstalando la aplicación o borrando los datos de la app desde los ajustes de su dispositivo Android (<em>Ajustes → Aplicaciones → DermatoSport → Borrar datos</em>).</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2><span class="icon">🤝</span> 4. Compartición de datos con terceros</h2>
+    <p>DermatoSport <strong>no comparte, vende ni transfiere</strong> ningún dato personal a terceros. No integra servicios de análisis, publicidad, seguimiento ni redes sociales.</p>
+  </section>
+
+  <section>
+    <h2><span class="icon">🧒</span> 5. Privacidad de menores de edad</h2>
+    <p>DermatoSport incluye herramientas de clasificación del IMC para niños según la referencia CDC. Sin embargo, no recopila datos de menores de edad de forma independiente ni los almacena en servidores. Es responsabilidad del usuario adulto (padre, tutor o profesional de la salud o el deporte) ingresar y gestionar la información correspondiente a menores.</p>
+  </section>
+
+  <section>
+    <h2><span class="icon">🛡️</span> 6. Seguridad</h2>
+    <p>Dado que todos los datos procesados por DermatoSport permanecen en el dispositivo del usuario, la seguridad depende de las protecciones propias del sistema operativo Android (PIN, huella dactilar, cifrado del dispositivo). Recomendamos mantener el dispositivo protegido con contraseña o biometría, especialmente si la app es utilizada por profesionales de la salud o el deporte con datos de terceros.</p>
+  </section>
+
+  <section>
+    <h2><span class="icon">✏️</span> 7. Cambios en esta política</h2>
+    <p>Podemos actualizar esta política de privacidad ocasionalmente. Cualquier cambio será comunicado mediante una actualización de DermatoSport en Google Play Store. Le recomendamos revisar esta página periódicamente para mantenerse informado.</p>
+  </section>
+
+  <section>
+    <h2><span class="icon">📬</span> 8. Contacto</h2>
+    <p>Si tiene preguntas sobre esta política de privacidad, puede contactarnos en:</p>
+    <p style="margin-top:10px"><strong>Correo electrónico:</strong> <a href="mailto:edison670107595@gmail.com" style="color:var(--accent)">edison670107595@gmail.com</a></p>
+  </section>
+
+</div>
+
+<footer>
+  &copy; <span id="anio"></span> DermatoSport — Todos los derechos reservados. Esta política aplica exclusivamente a la aplicación móvil DermatoSport.
+</footer>
+
+<script>
+  const hoy = new Date();
+  const opciones = { year: 'numeric', month: 'long', day: 'numeric' };
+  document.getElementById('fecha').textContent = hoy.toLocaleDateString('es-ES', opciones);
+  document.getElementById('anio').textContent = hoy.getFullYear();
+</script>
+
+</body>
+</html>
